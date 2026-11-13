@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Mi espacio | Galería personal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="encabezado">
+      <div class="intro">
+ 
+        <h1>Mi galería personal</h1>
+        <p class="subtitulo">Acerca de mi carrera, sueños, peliculas, artistas y hobbies</p>
+      </div>
+      <nav class="barra"><a href="#inicio">Inicio</a><a href="#secciones">Explorar galería</a><a href="#acerca">Acerca de</a></nav>
+    </header>
+    <div class="contenido" id="secciones">
+      <aside class="lateral">
+     
+        <h2>Secciones</h2>
+        <button class="categoria activa" data-categoria="carrera"><span></span> Carrera</button>
+        <button class="categoria" data-categoria="suenos"><span></span> Sueños</button>
+        <button class="categoria" data-categoria="peliculas"><span></span> Películas</button>
+        <button class="categoria" data-categoria="cantantes"><span></span> Artistas</button>
+        <button class="categoria" data-categoria="hobbies"><span></span> Hobbies</button>
+
+      </aside>
+      <main class="galeria" id="inicio">
+        <div class="titulo-seccion"><div><p class="etiqueta"></p><h2 id="titulo">Carrera</h2><p id="descripcion-seccion">Imágenes relacionadas con mis intereses.</p></div><span class="contador">05 IMÁGENES</span></div>
+        <div id="imagenes" class="tarjetas"></div>
+      </main>
+    </div>
+    <footer id="acerca"><span>EDUARDO SOSA HUERTA</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

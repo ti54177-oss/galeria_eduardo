@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+:root{--fondo:#0b1220;--panel:#111c2e;--panel2:#17243a;--texto:#eef3fb;--suave:#a6b3c7;--acento:#8ee3cf;--borde:#293950}
+html{scroll-behavior:smooth}
+body{margin:0;padding:30px 20px;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 15% 0%,#1b3150 0,#0b1220 42%);color:var(--texto);min-height:100vh}
+.pagina{max-width:1200px;margin:auto;background:#0e1929;border:1px solid var(--borde);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px #0008}
+.encabezado{padding:22px 34px 0;background:linear-gradient(120deg,#172a43,#101a2a 70%)}
+.marca{font-size:12px;font-weight:bold;letter-spacing:3px;color:var(--suave)}.marca span{color:var(--acento)}
+.intro{padding:34px 0 28px}.sobrelinea,.etiqueta{font-size:10px;letter-spacing:2.2px;color:var(--acento);font-weight:bold;margin:0 0 10px}
+h1{font-size:clamp(30px,5vw,48px);letter-spacing:-1.5px;margin:0 0 10px}.subtitulo{margin:0;color:var(--suave);font-size:15px}
+.barra{display:flex;gap:26px;border-top:1px solid #ffffff17;padding:15px 0}.barra a{color:#c7d3e4;text-decoration:none;font-size:13px}.barra a:hover{color:var(--acento)}
+.contenido{display:flex;gap:30px;padding:30px 34px 38px;min-height:550px}
+.lateral{flex:0 0 205px;padding:20px;background:var(--panel);border:1px solid var(--borde);border-radius:14px;height:max-content}
+.lateral h2{font-size:21px;margin:0 0 18px}
+.categoria{display:flex;align-items:center;gap:12px;width:100%;margin:7px 0;padding:12px;border:1px solid transparent;border-radius:9px;background:transparent;color:#c6d1e1;text-align:left;font-size:14px;cursor:pointer;transition:.2s}
+.categoria span{width:22px;color:var(--acento);font-size:17px;text-align:center}
+.categoria:hover,.categoria.activa{background:#22344c;border-color:#38516d;color:white}.categoria.activa{box-shadow:inset 3px 0 var(--acento)}
+.nota{margin-top:22px;padding-top:16px;border-top:1px solid var(--borde);font-size:12px;line-height:1.5;color:#91a1b8}
+.galeria{flex:1;min-width:0}.titulo-seccion{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:3px 0 22px}
+.titulo-seccion h2{font-size:29px;margin:0 0 7px}.titulo-seccion p:not(.etiqueta){margin:0;color:var(--suave);font-size:14px;line-height:1.5}
+.contador{white-space:nowrap;font-size:10px;letter-spacing:1.4px;color:var(--acento);border:1px solid #42665f;padding:8px 10px;border-radius:30px;margin-bottom:3px}
+.tarjetas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.tarjeta{overflow:hidden;background:var(--panel);border:1px solid var(--borde);border-radius:13px;transition:transform .2s,border-color .2s}
+.tarjeta:hover{transform:translateY(-4px);border-color:#628e91}
+.imagen-wrap{height:175px;position:relative;background:#1b2a3e;overflow:hidden}
+.tarjeta img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}.tarjeta:hover img{transform:scale(1.04)}
+.numero{position:absolute;right:10px;top:10px;padding:5px 8px;border-radius:20px;background:#0b1220cc;color:var(--acento);font-size:10px}
+.texto{padding:15px}.tarjeta h3{font-size:15px;margin:0 0 8px}.tarjeta p{margin:0;color:var(--suave);font-size:12px;line-height:1.55}
+footer{display:flex;justify-content:space-between;gap:15px;padding:18px 34px;border-top:1px solid var(--borde);color:#8192aa;font-size:11px;letter-spacing:.5px}
+@media(max-width:850px){.contenido{gap:18px;padding:22px}.lateral{flex-basis:180px}.tarjetas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){body{padding:10px}.pagina{border-radius:14px}.encabezado{padding:20px 20px 0}.intro{padding:27px 0 23px}.contenido{flex-direction:column;padding:18px}.lateral{flex-basis:auto}.lateral h2{margin-bottom:10px}.categoria{display:inline-flex;width:auto;margin:3px;padding:9px}.nota{display:none}.titulo-seccion{align-items:start;flex-direction:column}.tarjetas{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.imagen-wrap{height:140px}.texto{padding:11px}footer{padding:16px 20px;flex-direction:column}}
+@media(max-width:390px){.tarjetas{grid-template-columns:1fr}.imagen-wrap{height:190px}}
